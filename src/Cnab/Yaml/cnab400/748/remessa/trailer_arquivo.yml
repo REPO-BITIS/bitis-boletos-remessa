@@ -1,0 +1,32 @@
+# Baseado na documentação do sicredi
+
+tipo_registro:
+  pos: [1, 1]
+  picture: '9(01)'
+  default:  '9'
+  
+#Identificação do arquivo remessa
+identificacao_arquivo:
+  pos: [2, 2]
+  picture: '9(01)'
+  default:  '1'
+  
+#Número do Sicredi 
+numero_sicredi:
+  pos: [3, 5]
+  picture: '9(03)'
+  default:  '748'  
+  
+#Código do beneficiário Conta Corrente sem o DV ou conta beneficiário.
+codigo_beneficiario:
+  pos: [6, 10]
+  picture: '9(05)' 
+
+brancos01:
+  pos: [11, 394]
+  picture: 'X(384)'
+  default:  ''
+
+numero_sequencial:
+  pos: [395, 400]
+  picture: '9(06)'

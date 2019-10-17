@@ -1,0 +1,281 @@
+# SICREDI http://www.sicredi.com.br/websitesicredi/upload/files/28460_Manual_Beneficiario_Cobranca_CNAB_400___18062014.pdf
+
+codigo_ocorrencia:
+  pos: [1, 1]
+  picture: '9(01)'
+  default:  '1'
+
+tipo_cobranca:
+  pos: [2, 2]
+  picture: 'X(01)'
+  default:  'A'
+  
+numero_carteira:
+  pos: [3, 3]
+  picture: 'X(01)'
+  default:  'A'  
+  
+tipo_impressao:
+  pos: [4, 4]
+  picture: 'X(01)'
+  default:  'A'    
+  
+branco01:
+  pos: [5, 16]
+  picture: 'X(12)'
+  default:  ''
+
+tipo_moeda:
+  pos: [17, 17]
+  picture: 'X(01)'
+  default:  'A'  
+
+tipo_desconto:
+  pos: [18, 18]
+  picture: 'X(01)'
+  default:  'B' 
+#“A” – Valor
+#“B” – Percentual
+tipo_juros:
+  pos: [19, 19]
+  picture: 'X(01)'
+  default:  'B'   
+ 
+branco02:
+  pos: [20, 47]
+  picture: 'X(28)'
+  default:  ''
+  
+nosso_numero:
+  pos: [48, 56]
+  picture: 'X(09)'
+  default:  ''  
+
+branco03:
+  pos: [57, 62]
+  picture: 'X(06)'
+  default:  ''  
+  
+data_instrucao:
+  pos: [63, 70]
+  picture: '9(08)'
+  date_format: '%Y%m%d'
+
+#Campo tipo_instrucao deve estar vazio (sem preenchimento), só
+#utilizar quando 109-110 for = 31. Usar as seguintes
+#opções:
+#A – Desconto;
+#B - Juros por dia;
+#C - Desconto por dia de antecipação;
+#D - Data limite para concessão de desconto;
+#E - Cancelamento de protesto automático;
+#F - Carteira de cobrança - não disponível.
+codigo_carteira:
+  pos: [71, 71]
+  picture: 'X(01)'
+  default:  '' 
+  
+#“S” - Para postar o título diretamente ao pagador
+#“N” - Não postar e remeter o título para o beneficiário  
+postagem_titulo:
+  pos: [72, 72]
+  picture: 'X(01)'
+  default:  'N'   
+  
+branco04:
+  pos: [73, 73]
+  picture: 'X(01)'
+  default:  '' 
+  
+#“B” – Impressão é feita pelo Beneficiário  
+#“A” – Impressão é feita pelo Sicredi
+# coloquei inicialmente B porem a gerente do sicredi enviou um documento dizendo :
+#Informação divergente,
+#cobrança COM registro e
+#impressão pelo cedente deve ser
+#Postar NÃO.
+tipo_emissao:
+  pos: [74, 74]
+  picture: 'X(01)'
+  default:  'B'  
+  
+numero_parcela:
+  pos: [75, 76]
+  picture: 'X(02)'
+  default:  '' 
+  
+numero_total_parcela:
+  pos: [77, 78]
+  picture: 'X(02)'
+  default:  ''   
+  
+branco05:
+  pos: [79, 82]
+  picture: 'X(04)'
+  default:  ''   
+  
+valor_desconto_dia:
+  pos: [83, 92]
+  picture: '9(8)V9(2)'
+  default:  '0'   
+  
+percentual_multa:  
+  pos: [93, 96]
+  picture: '9(2)V9(2)'
+  default:  '0'  
+  
+branco06:
+  pos: [97, 108]
+  picture: 'X(12)'
+  default:  ''
+#01 - Cadastro de título;
+#02 - Pedido de baixa;
+#04 - Concessão de abatimento;
+#05 - Cancelamento de abatimento concedido;
+#06 - Alteração de vencimento;
+#09 - Pedido de protesto;
+#18 - Sustar protesto e baixar título;
+#19 - Sustar protesto e manter em carteira;   
+instrucao:
+  pos: [109, 110]
+  picture: 'X(02)'
+  default:  '01'  
+  
+seu_numero:
+  pos: [111, 120]
+  picture: '9(10)'
+  default:  '1'    
+  
+vencimento:
+  pos: [121, 126]
+  picture: '9(06)'
+  date_format: '%d%m%y'
+ 
+#preencher com zeros a esquerda  13 digitos
+valor_titulo:
+  pos: [127, 139]
+  picture: '9(11)V9(2)'
+  
+branco07:
+  pos: [140, 148]
+  picture: 'X(09)'
+  default:  '' 
+
+#12/04/2018
+#Alisson: mudei o default para A antes era K 
+#isso porque o K não permite fazer protesto dos boletos e alguns de nossos clientes estão precisando disso
+especie:
+  pos: [149, 149]
+  picture: 'X(01)'  
+  default:  'A' 
+  
+aceite:
+  pos: [150, 150]
+  picture: 'X(01)'
+  
+data_emissao:
+  pos: [151, 156]
+  picture: '9(06)'
+  date_format: '%d%m%y'  
+  
+protesto_automatico:
+  pos: [157, 158]
+  picture: '9(02)'
+  default:  '0' 
+  
+numero_dias_protesto:
+  pos: [159, 160]
+  picture: '9(02)'
+  default:  '0' 
+  
+#  Preencher com valor (alinhados à direita com
+#zeros à esquerda) ou preencher com zeros
+juros_um_dia:
+  pos: [161, 173]
+  picture: '9(11)V9(2)'
+  default:  '0'
+  
+desconto_ate:
+  pos: [174, 179]
+  picture: '9(06)'
+  default:  '0'
+  date_format: '%d%m%y'  
+  
+valor_desconto:
+  pos: [180, 192]
+  picture: '9(11)V9(2)'
+  default:  '0'
+ 
+zeros01:
+  pos: [193, 205]
+  picture: 'X(13)'
+  default:  '0000000000000'  
+  
+valor_abatimento:
+  pos: [206, 218]
+  picture: '9(11)V9(2)'
+  default:  '0'  
+  
+#“1” - Pessoa Física
+#“2” - Pessoa Jurídica  
+sacado_codigo_inscricao:
+  pos: [219, 219]
+  picture: 'X(01)'
+  default:  '1'  
+  
+zeros02:
+  pos: [220, 220]
+  picture: '9(01)'
+  default:  '0' 
+  
+sacado_numero_inscricao:
+  pos: [221, 234]
+  picture: '9(14)' 
+  
+nome:
+  pos: [235, 274]
+  picture: 'X(40)'  
+  
+logradouro:
+  pos: [275, 314]
+  picture: 'X(40)'  
+  
+codigo_sacado_sicredi:
+  pos: [315, 319]
+  picture: 'X(05)' 
+  default:  '00000' 
+  
+zeros03:
+  pos: [320, 325]
+  picture: '9(06)'
+  default:  '0'   
+  
+branco08:
+  pos: [326, 326]
+  picture: 'X(01)'
+  default:  ''   
+  
+cep:
+  pos: [327, 334]
+  picture: '9(08)'  
+  
+numero_documento:
+  pos: [335, 339]
+  picture: 'X(05)' 
+ 
+  
+cpf_sacador_avalista:
+  pos: [340, 353]
+  picture: 'X(14)' 
+  default:  '' 
+  
+nome_sacador_avalista:
+  pos: [354, 394]
+  picture: 'X(41)' 
+  default:  ''   
+  
+numero_sequencial:
+  pos: [395, 400]
+  picture: '9(06)' 
+  
+ 

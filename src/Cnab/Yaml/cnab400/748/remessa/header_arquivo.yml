@@ -1,0 +1,80 @@
+# SICREDI http://www.sicredi.com.br/websitesicredi/upload/files/28460_Manual_Beneficiario_Cobranca_CNAB_400___18062014.pdf
+
+tipo_registro:
+  pos: [1, 1]
+  picture: '9(01)'
+  default:  '0'
+
+tipo_operacao:
+  # 1 = Remessa
+  pos: [2, 2]
+  picture: '9(01)'
+  default:  '1'
+
+literal_remessa:
+  pos: [3, 9]
+  picture: 'X(07)'
+  default:  'REMESSA'
+
+codigo_servico:
+  pos: [10, 11]
+  picture: '9(02)'
+  default:  '01'
+
+literal_servico:
+  pos: [12, 26]
+  picture: 'X(15)'
+  default:  'COBRANCA'
+
+codigo_cedente:
+  pos: [27, 31]
+  picture: '9(05)'
+  
+cnpj:
+  pos: [32, 45]
+  picture: '9(14)'  
+
+branco01:
+  pos: [46, 76]
+  picture: 'X(31)'
+  default:  ''
+
+codigo_banco:
+  pos: [77, 79]
+  picture: '9(03)'
+  default:  '748'
+  
+nome_banco:
+  pos: [80, 94]
+  picture: 'X(15)'
+  default:  'Sicredi' 
+  
+data_geracao:
+  pos: [95, 102]
+  picture: '9(08)'
+  date_format: '%Y%m%d'
+
+brancos02:
+  pos: [103, 110]
+  picture: 'X(8)'
+  default: ''
+
+numero_remessa:
+  pos: [111, 117]
+  picture: '9(07)'
+  default:  '1'
+  
+brancos03:
+  pos: [118, 390]
+  picture: 'X(273)'
+  default: '' 
+
+versao:
+  pos: [391, 394]
+  picture: 'X(4)'
+  default:  '2.00' 
+  
+numero_sequencial:
+  pos: [395, 400]
+  picture: '9(06)'
+  default:  '000001'  

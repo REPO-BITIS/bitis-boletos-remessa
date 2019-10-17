@@ -1,0 +1,274 @@
+#santander
+#https://drive.google.com/file/d/0B0_1ZvKOwwPSNC1qTVpycjlTVzktUmV0Yk1OTkNiR0h0a2E0/view?usp=drive_web
+
+codigo_ocorrencia:
+  pos: [1, 1]
+  picture: '9(01)'
+  default:  '1'
+  
+#“01” - Pessoa Física
+#“02” - Pessoa Jurídica  
+cedente_codigo_inscricao:
+  pos: [2, 3]
+  picture: 'X(02)'
+  default:  '02'   
+  
+cedente_numero_inscricao:
+  pos: [4, 17]
+  picture: '9(14)'   
+  
+agencia:
+  pos: [18, 21]
+  picture: '9(4)' 
+#Conta cobrança Beneficiário = codigo_cedente 
+codigo_cedente:
+  pos: [22, 29]
+  picture: '9(8)'
+  default: '0'
+conta:
+  pos: [30, 37]
+  picture: '9(8)' 
+  default: '0' 
+  
+#Número Controle Cliente  
+numero_controle_participante:
+  pos: [38, 62]
+  picture: 'X(25)'   
+  default: '' 
+  
+nosso_numero:
+  pos: [63, 70]
+  picture: '9(8)'
+  default:  '0'  
+  
+data_segundo_desconto:
+  pos: [71, 76]
+  picture: '9(6)'
+  default:  '0' 
+  
+branco01:
+  pos: [77, 77]
+  picture: 'X(1)'
+  default:  ''   
+  
+#Informação de multa = 4, senão houver informar zero  
+informar_multa:
+  pos: [78, 78]
+  picture: '9(1)'
+  default:  '0'  
+
+multa:
+  pos: [79, 82]
+  picture: '9(2)V9(2)'
+  default:  '0'  
+  
+# Unidade de valor moeda corrente = 00 
+unidade_valor_moeda:
+  pos: [83, 84]
+  picture: '9(2)'
+  default:  '0'   
+#Valor do título em outra unidade (consultar banco)  
+valor_titulo_outra_unidade:
+  pos: [83, 97]
+  picture: '9(13)V9(2)'
+  default:  '0'   
+ 
+branco02:
+  pos: [98, 101]
+  picture: 'X(4)'
+  default:  ''   
+  
+#se igual a zeros a multa será cobrada
+#após o vencimento, se diferente, será cobrada a partir da data informada. Esta data se
+#informada, deverá ser maior que a data do vencimento.  
+data_cobranca_multa: 
+  pos: [102, 107]
+  picture: '9(6)'
+  default:  '0'   
+  
+carteira: 
+  pos: [108, 108]
+  picture: '9(1)'
+  default:  '5'    
+  
+#01 = ENTRADA DE TÍTULO
+#02 = BAIXA DE TÍTULO
+#04 = CONCESSÃO DE ABATIMENTO
+#05 = CANCELAMENTO ABATIMENTO
+#06 = ALTERAÇÃO DE VENCIMENTO
+#07 = ALT. NÚMERO CONT.BENEFICIÁRIO
+#08 = ALTERAÇÃO DO SEU NÚMERO
+#09 = PROTESTAR
+#18 = SUSTAR PROTESTO (Após início do ciclo de protesto)
+#98 = NÃO PROTESTAR (Antes do início do ciclo de protesto)
+codigo_ocorrencia:
+  pos: [109, 110]
+  picture: '9(2)'
+  default:  '01'  
+
+numero_documento:
+  pos: [111, 120]
+  picture: '9(10)'
+  default:  '0' 
+  
+vencimento:
+  pos: [121, 126]
+  picture: '9(06)'
+  date_format: '%d%m%y' 
+
+valor_titulo:
+  pos: [127, 139]
+  picture: '9(11)V9(2)'  
+ 
+codigo_banco:
+  pos: [140, 142]
+  picture: '9(03)'
+  default:  '033'  
+ 
+agencia_cobradora:
+  pos: [143, 147]
+  picture: '9(5)'
+  default: '0' 
+  
+#Espécie de documento:
+#01 = DUPLICATA
+#02 = NOTA PROMISSÓRIA
+#03 = APÓLICE / NOTA DE SEGURO
+#05 = RECIBO
+#06 = DUPLICATA DE SERVIÇO
+#07 = LETRA DE CAMBIO
+#08 = BDP - BOLETO DE PROPOSTA - (NOTA 6)
+#19 = BCC – BOLETO CARTÃO DE CRÉDITO (NOTA 8)
+especie:
+  pos: [148, 149]
+  picture: '9(02)'  
+  default:  '01'   
+    
+#Tipo de aceite = N
+aceite:
+  pos: [150, 150]
+  picture: 'X(01)' 
+  default:  'N'   
+  
+data_emissao:
+  pos: [151, 156]
+  picture: '9(06)'
+  date_format: '%d%m%y'   
+  
+#00 = NÃO HÁ INSTRUÇÕES
+#02 = BAIXAR APÓS QUINZE DIAS DO VENCIMENTO
+#03 = BAIXAR APÓS 30 DIAS DO VENCIMENTO
+#04 = NÃO BAIXAR
+#06 = PROTESTAR (VIDE POSIÇÃO392/393)
+#07 = NÃO PROTESTAR
+#08 = NÃO COBRAR JUROS DE MORA
+instrucao1:
+  pos: [157, 158]
+  picture: '9(02)'  
+  default:  '00'  
+
+instrucao2:
+  pos: [159, 160]
+  picture: '9(02)'  
+  default:  '00'    
+
+#mora
+juros_um_dia:
+  pos: [161, 173]
+  picture: '9(11)V9(2)'
+  default:  '0'
+  
+desconto_ate:
+  pos: [174, 179]
+  picture: '9(06)'
+  default:  '0'
+  date_format: '%d%m%y'  
+  
+valor_desconto:
+  pos: [180, 192]
+  picture: '9(11)V9(2)'
+  default:  '0'  
+     
+valor_iof:
+  pos: [193, 205]
+  picture: '9(11)V9(2)'
+  default:  '0'   
+  
+  
+valor_abatimento:
+  pos: [206, 218]
+  picture: '9(11)V9(2)'
+  default:  '0'    
+  
+#“01” - Pessoa Física
+#“02” - Pessoa Jurídica  
+sacado_codigo_inscricao:
+  pos: [219, 220]
+  picture: 'X(02)'
+  default:  '01'   
+  
+sacado_numero_inscricao:
+  pos: [221, 234]
+  picture: '9(14)'   
+      
+nome:
+  pos: [235, 274]
+  picture: 'X(40)'   
+  
+logradouro:
+  pos: [275, 314]
+  picture: 'X(40)' 
+  
+bairro:
+  pos: [315, 326]
+  picture: 'X(12)'
+  default:  ''   
+  
+cep:
+  pos: [327, 334]
+  picture: '9(08)'  
+  
+cidade:
+  pos: [335, 349]
+  picture: 'X(15)' 
+  default:  '' 
+  
+uf:
+  pos: [350, 351]
+  picture: 'X(02)'
+  default:  ''   
+  
+nome_sacador:
+  pos: [352, 381]
+  picture: 'X(30)'
+  default:  ''  
+  
+  
+branco03:
+  pos: [382, 382]
+  picture: 'X(1)'
+  default:  ''   
+ 
+complemento_conta:
+  pos: [383, 385]
+  picture: 'X(3)'
+  default:  '' 
+  
+branco04:
+  pos: [386, 391]
+  picture: 'X(6)'
+  default:  ''   
+  
+numero_dias_protesto:
+  pos: [392, 393]
+  picture: '9(2)'
+  default:  '0'   
+  
+branco05:
+  pos: [394, 394]
+  picture: 'X(1)'
+  default:  ''   
+  
+numero_sequencial:
+  pos: [395, 400]
+  picture: '9(06)'   

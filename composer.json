@@ -1,0 +1,17 @@
+{
+    "name": "bitis/bitiis-boletos-remessa",
+    "authors": [
+        {
+            "name": "luishgp",
+            "email": "luis@bitis.com.br"
+        }
+    ],
+    "require": {
+        "mustangostang/spyc": "^0.6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cnab\\": "src/Cnab"
+        }
+    }
+}

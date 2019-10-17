@@ -1,0 +1,25 @@
+#santander
+#https://drive.google.com/file/d/0B0_1ZvKOwwPSNC1qTVpycjlTVzktUmV0Yk1OTkNiR0h0a2E0/view?usp=drive_web
+
+tipo_registro:
+  pos: [1, 1]
+  picture: '9(01)'
+  default:  '9'
+  
+quantidade_parcelas:
+  pos: [2, 7]
+  picture: '9(6)'
+  default:  '1'  
+  
+valor_total_parcelas:
+  pos: [8, 20]
+  picture: '9(11)V9(2)' 
+  
+zeros1:
+  pos: [21, 394]
+  picture: '9(374)'
+  default:  '0'    
+
+numero_sequencial:
+  pos: [395, 400]
+  picture: '9(06)'

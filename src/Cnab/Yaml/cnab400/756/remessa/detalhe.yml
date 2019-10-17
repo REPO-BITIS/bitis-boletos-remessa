@@ -1,0 +1,299 @@
+#https://docs.google.com/viewer?a=v&pid=forums&srcid=MDMyNDg1NDM1MDg3ODI0ODUzMTcBMDg4MDE4MzgyNzE5MjM2MTI2MDcBM1ZtQ0ctenE5NUlKATAuMQEBdjI
+#esse arquivo deve ser mapeado de acordo com o manual acima. 19/05/2017
+
+codigo_ocorrencia:
+  pos: [1, 1]
+  picture: '9(01)'
+  default:  '1'
+  
+#“01” - Pessoa Física
+#“02” - Pessoa Jurídica  
+cedente_codigo_inscricao:
+  pos: [2, 3]
+  picture: 'X(02)'
+  default:  '02'   
+  
+cedente_numero_inscricao:
+  pos: [4, 17]
+  picture: '9(14)'   
+  
+agencia:
+  pos: [18, 21]
+  picture: '9(4)'  
+  
+agencia_dv:
+  pos: [22, 22]
+  picture: '9(1)' 
+  
+conta:
+  pos: [23, 30]
+  picture: '9(8)'
+  
+conta_dv:
+  pos: [31, 31]
+  picture: '9(1)' 
+  
+#Número do Convênio = codigo_cedente
+codigo_cedente:
+  pos: [32, 37]
+  picture: '9(6)' 
+  default: '0' 
+  
+#Número Controle Cliente  
+numero_controle_participante:
+  pos: [38, 62]
+  picture: 'X(25)'   
+  default: '' 
+  
+nosso_numero:
+  pos: [63, 73]
+  picture: '9(11)'
+  default:  '0'  
+  
+nosso_numero_dv:
+  pos: [74, 74]
+  picture: '9(01)'
+  default:  '0' 
+  
+  
+numero_parcela:
+  pos: [75, 76]
+  picture: '9(02)'
+  default:  '01' 
+  
+indicativao_valor_grupo:
+  pos: [77, 78]
+  picture: '9(02)'
+  default:  '00'   
+  
+  
+branco01:
+  pos: [79, 81]
+  picture: 'X(3)'
+  default:  '' 
+  
+indicativao_sacador:
+  pos: [82, 82]
+  picture: 'X(1)'
+  default:  ''   
+
+prefixo_titulo:
+  pos: [83, 85]
+  picture: 'X(3)'
+  default:  '' 
+  
+variacao:
+  pos: [86, 88]
+  picture: '9(03)'
+  default:  '000'    
+  
+conta_caucao:
+  pos: [89, 89]
+  picture: '9(01)'
+  default:  '0'    
+  
+codigo_responsabilidade:
+  pos: [90, 94]
+  picture: '9(05)'
+  default:  '00000'    
+  
+codigo_responsabilidade_dv:
+  pos: [95, 95]
+  picture: '9(01)'
+  default:  '0'   
+  
+bordero_cliente:
+  pos: [96, 101]
+  picture: '9(06)'
+  default:  '000000'   
+  
+
+branco02:
+  pos: [102, 106]
+  picture: 'X(5)'
+  default:  '' 
+  
+#01 - simples
+#02 -garantida vinculada
+#03 - garantida caucionada
+modalidade_cobranca:
+  pos: [107, 108]
+  picture: '9(2)'
+  default:  '01'   
+ 
+#01 = Registro de Títulos
+#02 = Solicitação de Baixa
+#04 = Concessão de Abatimento
+#05 = Cancelamento de Abatimento
+#06 = Alteração de Vencimento
+#08 = Alteração de Seu Número
+#09 = Instrução para Protestar
+#10 = Instrução para Sustar Protesto
+#11 = Instrução para Dispensar Juros
+#12 = Alteração de Pagador
+#31 = Alteração de Outros Dados
+#34 = Baixa - Pagamento Direto ao Beneficiário 
+comando_movimento:
+  pos: [109, 110]
+  picture: '9(2)'
+  default:  '01' 
+  
+#numero informado pelo cedente   
+numero_documento:
+  pos: [111, 120]
+  picture: 'X(10)'
+ 
+vencimento:
+  pos: [121, 126]
+  picture: '9(06)'
+  date_format: '%d%m%y' 
+
+valor_titulo:
+  pos: [127, 139]
+  picture: '9(11)V9(2)'  
+ 
+codigo_banco:
+  pos: [140, 142]
+  picture: '9(03)'
+  default:  '756'  
+ 
+agencia_cobradora:
+  pos: [143, 146]
+  picture: '9(4)'
+  default: '0' 
+
+agencia_dv_cobradora:
+  pos: [147, 147]
+  picture: '9(1)'
+  default: '0' 
+  
+especie:
+  pos: [148, 149]
+  picture: '9(02)'  
+  default:  '00'   
+#1 = Com aceite, 0 = Sem aceite 
+aceite:
+  pos: [150, 150]
+  picture: 'X(01)' 
+  default:  '0' 
+  
+data_emissao:
+  pos: [151, 156]
+  picture: '9(06)'
+  date_format: '%d%m%y' 
+  
+#Segundo tabela descrita  
+instrucao1:
+  pos: [157, 158]
+  picture: '9(02)'  
+  default:  '00'  
+
+instrucao2:
+  pos: [159, 160]
+  picture: '9(02)'  
+  default:  '00'   
+#mora
+juros_um_dia:
+  pos: [161, 166]
+  picture: '9(4)V9(2)'
+  default:  '0'
+
+multa:
+  pos: [167, 172]
+  picture: '9(4)V9(2)'
+  default:  '0'  
+  
+#Tipo Distribuição
+#1 – Cooperativa
+#2 - Cliente  
+tipo_distribuicao:
+  pos: [173, 173]
+  picture: '9(01)'
+  default: '2'    
+  
+desconto_ate:
+  pos: [174, 179]
+  picture: '9(06)'
+  default:  '0'
+  date_format: '%d%m%y'  
+  
+valor_desconto:
+  pos: [180, 192]
+  picture: '9(11)V9(2)'
+  default:  '0'  
+ 
+moeda:
+  pos: [193, 193]
+  picture: '9(01)'
+  default:  '9' 
+  
+valor_iof:
+  pos: [194, 205]
+  picture: '9(10)V9(2)'
+  default:  '0' 
+  
+valor_abatimento:
+  pos: [206, 218]
+  picture: '9(11)V9(2)'
+  default:  '0'  
+  
+#“01” - Pessoa Física
+#“02” - Pessoa Jurídica  
+sacado_codigo_inscricao:
+  pos: [219, 220]
+  picture: 'X(02)'
+  default:  '01'   
+  
+sacado_numero_inscricao:
+  pos: [221, 234]
+  picture: '9(14)' 
+  
+nome:
+  pos: [235, 274]
+  picture: 'X(40)' 
+
+logradouro:
+  pos: [275, 311]
+  picture: 'X(37)'  
+  
+bairro:
+  pos: [312, 326]
+  picture: 'X(15)'
+  default:  '' 
+  
+cep:
+  pos: [327, 334]
+  picture: '9(08)'  
+  
+cidade:
+  pos: [335, 349]
+  picture: 'X(15)' 
+  default:  '' 
+  
+uf:
+  pos: [350, 351]
+  picture: 'X(02)'
+  default:  '' 
+  
+observacao:
+  pos: [352, 391]
+  picture: 'X(40)'  
+  default:  ''  
+  
+  
+#Quantidade dias para envio protesto.
+#Se = 0, utilizar dias protesto padrão do
+#cliente.
+protesto_automatico:
+  pos: [392, 393]
+  picture: 'X(02)'
+  default:  '0'  
+  
+brancos04:
+  pos: [394, 394]
+  picture: 'X(01)'
+  default: ''   
+  
+numero_sequencial:
+  pos: [395, 400]
+  picture: '9(06)'   
