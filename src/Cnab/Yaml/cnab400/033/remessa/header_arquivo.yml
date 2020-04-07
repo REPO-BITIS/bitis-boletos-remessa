@@ -28,7 +28,7 @@ literal_servico:
 
 codigo_transmissao:
   pos: [27, 46]
-  picture: 'X(20)'
+  picture: '9(20)'
  
   
 razao_social:

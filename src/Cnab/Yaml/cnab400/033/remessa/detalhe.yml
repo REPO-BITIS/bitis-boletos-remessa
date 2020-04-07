@@ -10,7 +10,7 @@ codigo_ocorrencia:
 #“02” - Pessoa Jurídica  
 cedente_codigo_inscricao:
   pos: [2, 3]
-  picture: 'X(02)'
+  picture: '9(02)'
   default:  '02'   
   
 cedente_numero_inscricao:
@@ -69,8 +69,8 @@ unidade_valor_moeda:
   default:  '0'   
 #Valor do título em outra unidade (consultar banco)  
 valor_titulo_outra_unidade:
-  pos: [83, 97]
-  picture: '9(13)V9(2)'
+  pos: [85, 97]
+  picture: '9(8)V9(5)'
   default:  '0'   
  
 branco02:
@@ -108,7 +108,7 @@ codigo_ocorrencia:
 
 numero_documento:
   pos: [111, 120]
-  picture: '9(10)'
+  picture: 'X(10)'
   default:  '0' 
   
 vencimento:
