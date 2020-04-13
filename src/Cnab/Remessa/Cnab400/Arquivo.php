@@ -488,8 +488,10 @@ class Arquivo implements \Cnab\Remessa\IArquivo
         $this->trailer->numero_sequencial = $numero_sequencial++;
         if ($this->codigo_banco === \Cnab\Banco::SICREDI) {
             $this->trailer->codigo_beneficiario = $this->configuracao['codigo_cedente'];
-        } else if ($this->codigo_banco === \Cnab\Banco::SANTANDER) {
-            $this->trailer->valor_total_parcelas = $this->configuracao['valor_total_parcelas'];
+        } elseif ($this->codigo_banco === \Cnab\Banco::SANTANDER) {
+            //SANTANDER tem que ter o total de linhas do arquivo, header e trailer devem somar no total de linhas
+            //add 2 ao total de linhas
+            $this->trailer->valor_total_parcelas = ($this->configuracao['valor_total_parcelas']+2);
             $this->trailer->quantidade_parcelas = $this->configuracao['quantidade_parcelas'];
         }
 
