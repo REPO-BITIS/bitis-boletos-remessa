@@ -19,12 +19,14 @@ cedente_numero_inscricao:
   
 agencia:
   pos: [18, 21]
-  picture: '9(4)' 
+  picture: '9(4)'
+  
 #Conta cobrança Beneficiário = codigo_cedente 
 codigo_cedente:
   pos: [22, 29]
   picture: '9(8)'
   default: '0'
+
 conta:
   pos: [30, 37]
   picture: '9(8)' 
@@ -127,8 +129,8 @@ codigo_banco:
  
 agencia_cobradora:
   pos: [143, 147]
-  picture: '9(5)'
-  default: '0' 
+  picture: '9(05)'
+  default: '0'
   
 #Espécie de documento:
 #01 = DUPLICATA
@@ -252,7 +254,7 @@ branco03:
 complemento_conta:
   pos: [383, 385]
   picture: 'X(3)'
-  default:  '' 
+  default:  'I' 
   
 branco04:
   pos: [386, 391]
