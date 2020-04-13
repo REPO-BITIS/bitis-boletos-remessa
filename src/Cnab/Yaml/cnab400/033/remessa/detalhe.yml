@@ -19,12 +19,14 @@ cedente_numero_inscricao:
   
 agencia:
   pos: [18, 21]
-  picture: '9(4)' 
+  picture: '9(4)'
+  
 #Conta cobrança Beneficiário = codigo_cedente 
 codigo_cedente:
   pos: [22, 29]
   picture: '9(8)'
   default: '0'
+
 conta:
   pos: [30, 37]
   picture: '9(8)' 
