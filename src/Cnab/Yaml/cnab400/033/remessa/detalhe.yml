@@ -243,8 +243,7 @@ uf:
 nome_sacador:
   pos: [352, 381]
   picture: 'X(30)'
-  default:  ''  
-  
+  default:  ''
   
 branco03:
   pos: [382, 382]
@@ -252,10 +251,15 @@ branco03:
   default:  ''   
  
 complemento_conta:
-  pos: [383, 385]
-  picture: 'X(3)'
+  pos: [383, 383]
+  picture: 'X(1)'
   default:  'I' 
-  
+
+complemento:
+    pos: [384, 385]
+    picture: '9(2)'
+    default:  '06' 
+    
 branco04:
   pos: [386, 391]
   picture: 'X(6)'
