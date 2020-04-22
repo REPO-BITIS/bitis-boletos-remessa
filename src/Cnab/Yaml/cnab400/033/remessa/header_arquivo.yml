@@ -55,15 +55,15 @@ zeros1:
   picture: '9(16)'
   default:  '0'  
 
-brancos01:
+brancos1:
   pos: [117, 391]
   picture: 'X(275)'
   default: ''
 
-brancos01:
-    pos: [392, 394]
-    picture: '9(03)'
-    default: '0'
+zeros2:
+  pos: [392, 394]
+  picture: '9(03)'
+  default: '0'
 
 numero_sequencial:
   pos: [395, 400]
