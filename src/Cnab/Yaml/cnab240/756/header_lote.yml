@@ -51,4 +51,4 @@ versao_layout_lote:
   # Código adotado pela FEBRABAN para identificar qual a versão de layout do arquivo encaminhado.
   pos: [14, 16]
   picture: '9(3)'
-  default: '040'
+  default: '045'

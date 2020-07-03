@@ -4,8 +4,7 @@
 codigo_convenio:
   # Padrão: deixar em branco
   pos: [33, 52]
-  picture: 'X(20)'
-  default: ''
+  picture: '9(20)'
 
 agencia_dv:
   pos: [58,58]
@@ -37,7 +36,7 @@ versao_layout_arquivo:
   # 081, para SICOOB
   pos: [164, 166]
   picture: '9(3)'
-  default: '081'
+  default: '087'
 
 uso_reservado_empresa:
   # Campo utilizado pelo cliente/cedente. Na fase de testes (simulado), deverá conter a literal
