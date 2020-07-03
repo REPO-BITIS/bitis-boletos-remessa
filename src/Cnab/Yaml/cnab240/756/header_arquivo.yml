@@ -2,7 +2,7 @@
 # disponível em: http://www.bancoob.com.br/atendimentocobranca/CAS/2_Implanta%C3%A7%C3%A3o_do_Servi%C3%A7o/Sistema_Proprio/Layouts_para_troca_de_informa%C3%A7%C3%B5es.xls
 
 codigo_convenio:
-  # Padrão: deixar em branco
+  # Se tornou obrigatório, precisa ser enviado
   pos: [33, 52]
   picture: '9(20)'
 
