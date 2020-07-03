@@ -5,6 +5,7 @@ codigo_convenio:
   # Se tornou obrigatório, precisa ser enviado
   pos: [33, 52]
   picture: '9(20)'
+  default: ''
 
 agencia_dv:
   pos: [58,58]
