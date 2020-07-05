@@ -109,6 +109,7 @@ class Arquivo implements \Cnab\Remessa\IArquivo
         }
 
         if ($this->codigo_banco == \Cnab\Banco::SICOOB) {
+            $this->headerArquivo->codigo_convenio = $this->configuracao['codigo_convenio'];
             $this->headerArquivo->conta = $this->configuracao['conta'];
             $this->headerArquivo->conta_dv = $this->configuracao['conta_dv'];
         }
