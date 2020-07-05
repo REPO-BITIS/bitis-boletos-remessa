@@ -53,6 +53,7 @@ class Arquivo implements \Cnab\Remessa\IArquivo
         }
 
         if ($this->codigo_banco == \Cnab\Banco::SICOOB) {
+            $campos[] = 'codigo_convenio';
             $campos[] = 'agencia';
             $campos[] = 'agencia_dv';
             $campos[] = 'numero_sequencial_arquivo';
