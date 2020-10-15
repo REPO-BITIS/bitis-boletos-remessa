@@ -52,3 +52,9 @@ data_credito_obsoleto:
   pos: [200, 207]
   picture: '9(8)'
   default: '0'
+
+versao_layout_lote:
+  # Código adotado pela FEBRABAN para identificar qual a versão de layout do arquivo encaminhado.
+  pos: [14, 16]
+  picture: '9(3)'
+  default: '020'
