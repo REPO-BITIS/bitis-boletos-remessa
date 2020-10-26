@@ -56,5 +56,5 @@ agencia_cobradora_dv:
   # Código e Dígito Verificador da Agência Encarregada da Cobrança são fornecidos pela CAIXA. Para
   # essa informação solicitar a relação de agências cobradoras à agência CAIXA de relacionamento.
   pos: [106, 106]
-  picture: 'x'
+  picture: 'X(1)'
   default: ''
