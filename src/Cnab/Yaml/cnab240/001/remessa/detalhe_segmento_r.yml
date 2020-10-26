@@ -1,0 +1,9 @@
+codigo_desconto_2:
+  pos: [18, 18]
+  picture: '9(1)'
+  default: '0'
+
+codigo_desconto_3:
+  pos: [42, 42]
+  picture: '9(1)'
+  default: '0'

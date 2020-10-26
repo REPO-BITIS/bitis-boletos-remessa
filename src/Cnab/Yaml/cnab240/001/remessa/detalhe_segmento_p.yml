@@ -50,7 +50,7 @@ numero_documento:
   picture: 'X(15)'
 
 agencia_cobradora_dv:
-  # Preencher com zeros - o sistema atribuirá a agência encarregada da cobrança pelo CEP do sacado.
+  # Preencher com zeros -o sistema atribuirá a agência encarregada da cobrança pelo CEP do sacado.
   # Código adotado pelo Banco responsável pela cobrança, para identificar o estabelecimento bancário
   # responsável pela cobrança do título.
   # Código e Dígito Verificador da Agência Encarregada da Cobrança são fornecidos pela CAIXA. Para
