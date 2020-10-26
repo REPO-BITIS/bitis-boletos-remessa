@@ -6,4 +6,4 @@ codigo_desconto_02:
 codigo_desconto_03:
   pos: [42, 42]
   picture: '9(1)'
-  default: 0
+  default: 0  
