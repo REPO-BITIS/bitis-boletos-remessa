@@ -48,13 +48,3 @@ numero_documento:
   # cobrança de seguros, etc. Campo de preenchimento obrigatório.
   pos: [63,77]
   picture: 'X(15)'
-
-agencia_cobradora_dv:
-  # Preencher com zeros -o sistema atribuirá a agência encarregada da cobrança pelo CEP do sacado.
-  # Código adotado pelo Banco responsável pela cobrança, para identificar o estabelecimento bancário
-  # responsável pela cobrança do título.
-  # Código e Dígito Verificador da Agência Encarregada da Cobrança são fornecidos pela CAIXA. Para
-  # essa informação solicitar a relação de agências cobradoras à agência CAIXA de relacionamento.
-  pos: [106, 106]
-  picture: 'X(1)'
-  default: ''
