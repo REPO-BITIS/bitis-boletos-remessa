@@ -38,7 +38,8 @@ agencia_dv:
 codigo_cedente:
   pos: [60, 65]
   picture: '9(6)'
-
+  default: '0'
+  
 codigo_modelo:
   pos: [66, 72]
   picture: '9(7)'
