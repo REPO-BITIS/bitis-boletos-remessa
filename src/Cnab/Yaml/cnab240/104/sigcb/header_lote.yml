@@ -16,13 +16,13 @@ numero_inscricao:
   picture: '9(15)'
 
 codigo_convenio:
-  pos: [34, 39]
-  picture: 'X(6)'
+  pos: [34, 40]
+  picture: '9(7)'
 
 uso_exclusivo_banco:
   # Preenchar com zeros
-  pos: [40, 53]
-  picture: '9(14)'
+  pos: [41, 53]
+  picture: '9(13)'
   default: '0'
 
 agencia:
