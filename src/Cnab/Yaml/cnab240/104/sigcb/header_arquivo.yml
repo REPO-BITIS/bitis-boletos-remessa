@@ -98,7 +98,7 @@ numero_sequencial_arquivo:
 versao_layout_arquivo:
   pos: [164, 166]
   picture: '9(3)'
-  default: '050'
+  default: '107'
 
 densidade_gravacao_arquivo:
   # Densidade de gravação (bpi), do arquivo encaminhado. Pode ser:

@@ -1,3 +1,7 @@
+versao_layout_lote:
+  pos: [14, 16]
+  picture: '9(3)'
+  default: '67'
 # Registro Header de Lote
 
 # Baseado na documentação da Caixa
