@@ -6,7 +6,7 @@
 versao_layout_lote:
   pos: [14, 16]
   picture: '9(3)'
-  default: '067'
+  default: '037'
 
 codigo_inscricao:
   # Código que identifica o tipo de inscrição da Empresa ou Pessoa Física.
