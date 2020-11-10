@@ -3,8 +3,8 @@
 # Disponível em: http://www.caixa.gov.br/downloads/cobranca-caixa-manuais/LEIAUTE_CNAB_240_SIGCB_COBRANCA_CAIXA.pdf
 
 codigo_cedente:
-  pos: [24, 29]
-  picture: '9(6)'
+  pos: [24, 30]
+  picture: '9(7)'
 
 nosso_numero:
   pos: [42, 56]
