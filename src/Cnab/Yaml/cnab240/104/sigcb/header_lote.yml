@@ -2,12 +2,6 @@
 
 # Baseado na documentação da Caixa
 # Disponível em: http://www.caixa.gov.br/downloads/cobranca-caixa-manuais/LEIAUTE_CNAB_240_SIGCB_COBRANCA_CAIXA.pdf
-
-versao_layout_lote:
-  pos: [14, 16]
-  picture: '9(3)'
-  default: '037'
-
 codigo_inscricao:
   # Código que identifica o tipo de inscrição da Empresa ou Pessoa Física.
   # '1' = CPF
