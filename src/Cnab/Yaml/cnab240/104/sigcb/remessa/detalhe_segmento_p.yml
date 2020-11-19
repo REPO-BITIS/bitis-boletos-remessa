@@ -23,3 +23,39 @@ modalidade_carteira:
 nosso_numero:
   pos: [43, 57]
   picture: '9(15)'
+  default: '0'
+
+forma_cadastramento:
+  pos: [59, 59]
+  picture: '9(1)'
+  default: '1'
+
+identificacao_distribuicao:
+  pos: [62, 62]
+  picture: 'X(1)'
+  default: '0'
+
+valor_juros_mora:
+  pos: [127, 141]
+  picture: '9(15)'
+  default: '3'
+
+codigo_protesto: 
+  pos: [221, 221]
+  picture: '9(1)'
+  default: '3'
+
+prazo_protesto:
+  pos: [222, 223]
+  picture: '9(2)'
+  default: '3'
+
+codigo_baixa:
+  pos: [224, 224]
+  picture: '9(1)'
+  default: '2'
+
+prazo_baixa:
+  pos: [225, 227]
+  picture: '9(3)'
+  default: '2'              
