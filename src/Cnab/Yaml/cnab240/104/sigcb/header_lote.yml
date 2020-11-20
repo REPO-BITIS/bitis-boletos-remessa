@@ -19,7 +19,7 @@ numero_inscricao:
   pos: [19, 33]
   picture: '9(15)'
 
-codigo_cedente:
+codigo_convenio:
   pos: [34, 40]
   picture: '9(7)'
 
