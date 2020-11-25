@@ -538,8 +538,8 @@ class Arquivo implements \Cnab\Remessa\IArquivo
         }
 
         if ($this->codigo_banco == \Cnab\Banco::SICOOB) {
-            $this->trailerLote->qtde_titulo_cobranca_vinculada = $qtde_titulo_cobranca_simples;
-            $this->trailerLote->valor_total_titulo_vinculada = $valor_total_titulo_simples;
+            $this->trailerLote->qtde_titulo_cobranca_vinculada = 0;
+            $this->trailerLote->valor_total_titulo_vinculada = 0;
         }
 
         $this->trailerArquivo->qtde_lotes = 1;
