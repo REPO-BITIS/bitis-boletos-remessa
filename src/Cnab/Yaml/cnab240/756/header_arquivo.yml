@@ -37,7 +37,7 @@ versao_layout_arquivo:
   # 081, para SICOOB
   pos: [164, 166]
   picture: '9(3)'
-  default: '087'
+  default: '081'
 
 uso_reservado_empresa:
   # Campo utilizado pelo cliente/cedente. Na fase de testes (simulado), deverá conter a literal
