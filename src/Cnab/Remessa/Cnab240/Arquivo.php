@@ -315,7 +315,7 @@ class Arquivo implements \Cnab\Remessa\IArquivo
         } else {
             $detalhe->segmento_p->codigo_protesto = 3; // 3 = Não protestar
             if ($this->codigo_banco == \Cnab\Banco::CEF) {
-                $detalhe->segmento_p->prazo_protesto = 3;
+                $detalhe->segmento_p->prazo_protesto = 0;
             } else {
                 $detalhe->segmento_p->prazo_protesto = 0;
             }
