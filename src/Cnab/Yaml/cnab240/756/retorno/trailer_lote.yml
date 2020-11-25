@@ -43,10 +43,12 @@ simples_valor_total_titulo_carteira:
 vinculada_total_titulo_cobranca:
   pos: [47,52]
   picture: '9(6)'
+  default: '0'
 
 vinculada_valor_total_titulo_carteira:
   pos: [53,69]
   picture: '9(15)V9(2)'
+  default: '0'
 
 caucionada_total_titulo_cobranca:
   pos: [70,75]
