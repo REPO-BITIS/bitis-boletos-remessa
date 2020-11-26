@@ -144,7 +144,7 @@ class Arquivo implements \Cnab\Remessa\IArquivo
 
         if ($this->codigo_banco == \Cnab\Banco::CEF) {
             $this->headerLote->codigo_convenio = $this->headerArquivo->codigo_cedente;
-            $this->headerLote->codigo_cedente = $this->headerArquivo->codigo_cedente;
+            //$this->headerLote->codigo_cedente = $this->headerArquivo->codigo_cedente;
         }
 
         if ($this->codigo_banco == \Cnab\Banco::BANCO_DO_BRASIL) {
