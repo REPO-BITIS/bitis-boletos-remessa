@@ -1,7 +1,10 @@
-# Registro Header de Lote
-
+# Registro Header de Lote  
 # Baseado na documentação da Caixa
 # Disponível em: http://www.caixa.gov.br/downloads/cobranca-caixa-manuais/LEIAUTE_CNAB_240_SIGCB_COBRANCA_CAIXA.pdf
+versao_layout_arquivo:
+  pos: [14, 16]
+  picture: '9(3)'
+  default: '067'
 
 codigo_inscricao:
   # Código que identifica o tipo de inscrição da Empresa ou Pessoa Física.
@@ -16,13 +19,13 @@ numero_inscricao:
   picture: '9(15)'
 
 codigo_convenio:
-  pos: [34, 39]
-  picture: 'X(6)'
+  pos: [34, 40]
+  picture: '9(7)'
 
-uso_exclusivo_banco:
+uso_exclusivo_banco_01:
   # Preenchar com zeros
-  pos: [40, 53]
-  picture: '9(14)'
+  pos: [41, 53]
+  picture: '9(13)'
   default: '0'
 
 agencia:
@@ -35,16 +38,17 @@ agencia_dv:
   pos: [59, 59]
   picture: '9(1)'
 
-codigo_cedente:
+uso_exclusivo_banco_02:
   pos: [60, 65]
   picture: '9(6)'
+  default: '0'
 
 codigo_modelo:
   pos: [66, 72]
   picture: '9(7)'
   default: '0'
 
-uso_exclusivo_banco_02:
+uso_exclusivo_banco_03:
   pos: [73, 73]
   picture: '9(1)'
   default: '0'

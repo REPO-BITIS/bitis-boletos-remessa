@@ -144,7 +144,7 @@ class Arquivo implements \Cnab\Remessa\IArquivo
 
         if ($this->codigo_banco == \Cnab\Banco::CEF) {
             $this->headerLote->codigo_convenio = $this->headerArquivo->codigo_cedente;
-            $this->headerLote->codigo_cedente = $this->headerArquivo->codigo_cedente;
+            //$this->headerLote->codigo_cedente = $this->headerArquivo->codigo_cedente;
         }
 
         if ($this->codigo_banco == \Cnab\Banco::BANCO_DO_BRASIL) {
@@ -248,6 +248,7 @@ class Arquivo implements \Cnab\Remessa\IArquivo
         if ($this->codigo_banco != \Cnab\Banco::SICOOB) {
             $detalhe->segmento_p->nosso_numero = $boleto['nosso_numero'];
         }
+
         if ($this->codigo_banco == \Cnab\Banco::BANCO_DO_BRASIL) {
             // Informar 1 – para carteira 11/12 na modalidade Simples; 2 ou 3 – para carteira 11/17 modalidade
             // Vinculada/Caucionada e carteira 31; 4 – para carteira 11/17 modalidade Descontada e carteira 51; e 7 – para
@@ -314,7 +315,7 @@ class Arquivo implements \Cnab\Remessa\IArquivo
         } else {
             $detalhe->segmento_p->codigo_protesto = 3; // 3 = Não protestar
             if ($this->codigo_banco == \Cnab\Banco::CEF) {
-                $detalhe->segmento_p->prazo_protesto = 10;
+                $detalhe->segmento_p->prazo_protesto = 0;
             } else {
                 $detalhe->segmento_p->prazo_protesto = 0;
             }
@@ -353,6 +354,14 @@ class Arquivo implements \Cnab\Remessa\IArquivo
             $detalhe->segmento_p->codigo_ocorrencia = 2;
         } else {
             throw new \Exception('Tipo de detalhe inválido: ' . $tipo);
+        }
+
+        if ($this->codigo_banco == \Cnab\Banco::CEF) {
+            $detalhe->segmento_p->nosso_numero = "000000000002186";
+            $detalhe->segmento_p->forma_cadastramento = 1;
+            $detalhe->segmento_p->codigo_protesto = 3;
+            $detalhe->segmento_p->codigo_baixa = 1;
+            $detalhe->segmento_p->prazo_baixa = 2;
         }
 
         // SEGMENTO Q -------------------------------
