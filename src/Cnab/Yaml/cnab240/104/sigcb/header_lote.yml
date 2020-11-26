@@ -38,14 +38,14 @@ agencia_dv:
   pos: [59, 59]
   picture: '9(1)'
 
-codigo_cedente:
-  pos: [60, 66]
-  picture: '9(7)'
+uso_exclusivo_banco:
+  pos: [60, 65]
+  picture: '9(6)'
   default: '0'
 
 codigo_modelo:
-  pos: [67, 72]
-  picture: '9(6)'
+  pos: [66, 72]
+  picture: '9(7)'
   default: '0'
 
 uso_exclusivo_banco_02:
