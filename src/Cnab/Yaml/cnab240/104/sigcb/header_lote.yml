@@ -22,7 +22,7 @@ codigo_convenio:
   pos: [34, 40]
   picture: '9(7)'
 
-uso_exclusivo_banco:
+uso_exclusivo_banco_01:
   # Preenchar com zeros
   pos: [41, 53]
   picture: '9(13)'
@@ -38,7 +38,7 @@ agencia_dv:
   pos: [59, 59]
   picture: '9(1)'
 
-uso_exclusivo_banco:
+uso_exclusivo_banco_02:
   pos: [60, 65]
   picture: '9(6)'
   default: '0'
@@ -48,7 +48,7 @@ codigo_modelo:
   picture: '9(7)'
   default: '0'
 
-uso_exclusivo_banco_02:
+uso_exclusivo_banco_03:
   pos: [73, 73]
   picture: '9(1)'
   default: '0'
