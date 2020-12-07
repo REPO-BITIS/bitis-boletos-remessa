@@ -362,6 +362,7 @@ class Arquivo implements \Cnab\Remessa\IArquivo
             $detalhe->segmento_p->codigo_protesto = 3;
             $detalhe->segmento_p->codigo_baixa = 1;
             $detalhe->segmento_p->prazo_baixa = 2;
+            $detalhe->segmento_p->valor_juros_mora = 0;
         }
 
         // SEGMENTO Q -------------------------------
