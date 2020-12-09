@@ -53,9 +53,9 @@ prazo_protesto:
 codigo_baixa:
   pos: [224, 224]
   picture: '9(1)'
-  default: '2'
+  default: '1'
 
 prazo_baixa:
   pos: [225, 227]
   picture: '9(3)'
-  default: '2'              
+  default: '29'              
