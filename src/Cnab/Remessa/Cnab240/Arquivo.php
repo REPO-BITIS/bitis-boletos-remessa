@@ -357,11 +357,10 @@ class Arquivo implements \Cnab\Remessa\IArquivo
         }
 
         if ($this->codigo_banco == \Cnab\Banco::CEF) {
-            $detalhe->segmento_p->nosso_numero = "000000000002186";
             $detalhe->segmento_p->forma_cadastramento = 1;
             $detalhe->segmento_p->codigo_protesto = 3;
             $detalhe->segmento_p->codigo_baixa = 1;
-            $detalhe->segmento_p->prazo_baixa = 2;
+            $detalhe->segmento_p->prazo_baixa = 29;
             $detalhe->segmento_p->valor_juros_mora = 3;
         }
 
