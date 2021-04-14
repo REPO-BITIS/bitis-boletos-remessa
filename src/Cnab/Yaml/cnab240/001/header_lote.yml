@@ -1,3 +1,10 @@
+forma_lancamento:
+  # Forma de Lançamento
+  # Padrão: ''
+  pos: [12, 13]
+  picture: 'X(2)'
+  default: ''
+
 numero_inscricao:
   # Informar o número de inscrição da Empresa (CNPJ) ou Pessoa Física (CPF).
   pos: [19, 33]
