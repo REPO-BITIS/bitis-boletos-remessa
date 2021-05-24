@@ -66,7 +66,7 @@ class Arquivo implements \Cnab\Remessa\IArquivo
                 $campos[] = 'valor_total_parcelas';
                 $campos[] = 'quantidade_parcelas';
                 $campos[] = 'carteira';
-                $campos[] = 'complemento_conta';
+                $campos[] = 'complemento';
                 break;
             default:
                 $campos[] = 'conta_dac';
@@ -222,7 +222,7 @@ class Arquivo implements \Cnab\Remessa\IArquivo
                 }
                 $detalhe->conta = $this->configuracao['conta'];
                 $detalhe->codigo_cedente = $this->configuracao['codigo_cedente'];
-                $detalhe->complemento_conta = $this->configuracao['complemento_conta'];
+                $detalhe->complemento = $this->configuracao['complemento'];
 
                 $detalhe->bairro = $this->prepareText($boleto['sacado_bairro']);
                 $detalhe->cidade = $this->prepareText($boleto['sacado_cidade']);
